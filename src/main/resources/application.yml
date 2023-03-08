@@ -40,13 +40,13 @@ spring:
               args:
                 name: ORDER-SERVICE
                 fallbackuri: forward:/fall-back/order-service
-#hystrix:
-#  command:
-#    fallbackcmd:
-#      execution:
-#        isolation:
-#          thread:
-#            timeoutInMillisecond: 3000
+hystrix:
+  command:
+    fallbackcmd:
+      execution:
+        isolation:
+          thread:
+            timeoutInMillisecond: 3000
 #
 #management:
 #  endpoints:
